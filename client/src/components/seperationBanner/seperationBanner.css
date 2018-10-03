@@ -1,0 +1,19 @@
+#seperationBanner{
+    position:relative;
+    /* background-image:linear-gradient(#15303b,#172f39,#152d37,#142a35,#132730,#11242b,#10232a);
+    background-attachment: fixed;
+    height:312px; */
+    margin-top:30px;
+    margin-bottom:30px;
+   
+}
+
+#seperationBannerInner{
+    background-image: url(../../images/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    height:312px;
+    width:100%;
+    background-size:stretch;
+
+}

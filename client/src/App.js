@@ -1,38 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import HomePage from './pages/homepage';
+import BlogPage from './pages/blogpost';
+
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+
 
 class App extends Component {
-
-  componentDidMount() {
-    this.getPasswords();
-  }
-
-  getPasswords = () => {
-    // Get the passwords and store them in state
-    fetch('/api/passwords')
-      .then(res => res.text())
-      .then(data => console.log(data));
-  }
-
-
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <BrowserRouter>
+          <Switch>
+            <Route exact path='/' component={HomePage}/>
+            <Route path='/posts/:postid' component={BlogPage}/>
+          </Switch>
+      </BrowserRouter>
+        
       </div>
     );
   }

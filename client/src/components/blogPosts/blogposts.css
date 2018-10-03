@@ -1,0 +1,87 @@
+#featuredPost{
+    display:flex;
+    width:70%;
+    height:400px;
+    margin:0 auto;
+    background-color:white;
+    
+}
+
+#featuredPostImage{
+    width:70%;
+    height:100%;
+}
+
+#featuredPostImage img{
+    width:100%;
+    max-width:100%;
+    height:100%;
+    
+}
+
+#featuredPostText{
+    width:30%;
+    text-align: left;
+    padding-left:10px;
+}
+
+#featuredPostTitle{
+    font-weight:bold;
+}
+
+#readFeatured{
+    color:red;
+    bottom:5px;
+}
+
+/*Blog Posts Container*/
+#blogPosts{
+    width:70%;
+    display:flex;
+    margin:0 auto;
+    justify-content: space-evenly;
+    
+}
+
+.post{
+    background-color:white;
+    width:30%;
+    margin:10px;
+}
+
+.postImage{
+    display:block;
+    width:100%;
+    padding:0;
+    height:200px;
+}
+
+.postTitle{
+    display:block;
+    font-size:1em;
+    color: #12bbc2;
+
+}
+
+.postBody{
+    text-align:left;
+    font-size:0.9em;
+    padding:5px;
+}
+
+.viewPostLink {
+    padding:5px;
+    text-decoration: none;
+    font-size:1em;
+    text-align: right;
+
+}
+
+.viewPostLink a{
+    text-decoration: none;
+    color: #12bbc2;
+    font-size:0.8em;
+}
+.viewPostLink:visited{
+    text-decoration: none;
+}
