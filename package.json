@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.3",
-    "node-fetch": "^2.2.0"
+    "node-fetch": "^2.2.0",
+    "woocommerce-api": "^1.4.2"
   }
 }

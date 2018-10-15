@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+
 import './App.css';
 import HomePage from './pages/homepage';
 import BlogPage from './pages/blogpost';
+import Products from './pages/productpage';
 
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faCheckSquare, faCoffee, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faEnvelope)
+
 
 
 class App extends Component {
@@ -14,6 +21,7 @@ class App extends Component {
           <Switch>
             <Route exact path='/' component={HomePage}/>
             <Route path='/posts/:postid' component={BlogPage}/>
+            <Route path='/shop' component={Products}/>
           </Switch>
       </BrowserRouter>
         

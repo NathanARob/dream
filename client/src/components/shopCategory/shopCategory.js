@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import './shopCategory.css';
 
 let url='http://localhost/dreamcapture';
-let consumerKey = 'ck_e0c67cf1b85264384c98aa99648f458c0265d761';
-let consumerSecret = 'cs_7d83d8696cf970b61080e5ad618c7fc3553607b5';
+
 
 class ShopByCategory extends Component{
 
@@ -15,7 +14,7 @@ class ShopByCategory extends Component{
         
             return (
                 <div id='shopCategoryContainer'>
-                <h2>Crafty Products</h2>
+                <h2 class='heading'>Crafty Products</h2>
                     <div id='shopCategories'>
 
                         <div class='shopCategory'>

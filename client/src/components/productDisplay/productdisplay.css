@@ -1,0 +1,124 @@
+.productDisplayContainer{
+    position:relative;
+    display:flex;
+    width:80%;
+    margin:0 auto;
+}
+
+.products{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width:70%;
+}
+
+.shopItem{
+    position:relative;
+    width:45%;
+    height:500px;
+    margin-left:10px;
+    margin-right:10px;
+    margin-bottom:15px;
+    background-color:white;
+
+}
+.shopItemImage{
+    max-width:100%;
+}
+.shopItemName{
+    font-family: 'Amatic SC', cursive;
+    font-weight:bold;
+    font-size:2em;
+}
+
+.shopItemPrice{
+    font-size:1.2em;
+}
+
+
+.shopItemDescription{
+
+}
+
+/*Place order Button*/
+.placeOrder{
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.placeOrder button{
+    padding:10px;
+    background-color:#1e404e;
+    border-radius:5px;
+    border:none;
+    color:white;
+}
+
+.placeOrder button:hover{
+    
+    background-color:#5b7d76;
+   }
+
+
+/*Sharing buttons*/
+.sharing{
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.shareicon{
+    margin-right:7px;
+    padding:2px;
+    font-size: 1.4em;
+}
+
+.pinterestShare{
+    color:#bd081b;
+}
+
+.facebookShare{
+    color: #4867aa;
+}
+
+.emailShare{
+    color:#cd5c2f;
+}
+
+
+/*Product Filter*/
+
+.filter{
+    position:absolute;
+    right:0;
+  
+    width:200px;
+    box-shadow: 5px 10px 15px#888888;
+    
+
+}
+
+.filterInner{
+   
+    display:flex;
+    max-width:100%;
+    min-width:100%;
+    flex-direction:column;
+    align-items:start;
+    background-color:white;
+    
+}
+
+.filterHeading{
+    display:block;
+    font-weight:bold;
+    padding-left:5px;
+
+}
+
+.filterSubheading{
+    display:block;
+    padding-left:15px;
+    font-size:0.9em;
+
+}

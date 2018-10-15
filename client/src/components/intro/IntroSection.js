@@ -5,9 +5,13 @@ const IntroSection = () => {
         
     return (
         <div id='introContainer'>
-            <h1>Intro</h1>
+            <h1 class='heading'>Intro</h1>
             <p id='introText'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at justo nec odio hendrerit sollicitudin. Nunc at lorem et sapien sodales iaculis. Donec tempus dignissim nibh quis scelerisque. Morbi id semper neque. Donec porttitor magna ut turpis egestas luctus. Praesent malesuada purus id condimentum eleifend. Aenean tristique imperdiet elit ac scelerisque. Nulla in ante condimentum elit blandit fermentum ac in risus. In pellentesque pretium mauris, a consectetur nunc sollicitudin ac. Quisque scelerisque sem id sapien blandit, et eleifend est commodo. Donec suscipit augue ac ex pretium, non ultrices nisi tempus. Nullam sollicitudin orci augue, at egestas purus sollicitudin vitae.
+            Welcome to Dream Capture! 
+I have always loved crafting and creating, and it has always been a dream of mine to be able to create beautiful pieces and share my creations with the world. Dream Capture is my vessel to do so! I take inspiration from things around me, online – Pinterest especially! I try to create things I would love to see and own myself, and of course I love getting requests as well. 
+So please feel free to take a look around. Share with your friends and family if you like or place an order for something special! If you are looking for something and don’t see it here – please feel free to pop me a mail and let’s chat about how to capture your custom design and make that dream a reality. 
+
+
             </p>
         </div>
     );
