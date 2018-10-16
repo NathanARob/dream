@@ -28,14 +28,17 @@ class ProductDisplay extends Component{
 
    
     render(){
+        
         return(
             <React.Fragment>
+
             <h1 className='heading'>Products</h1>
 
             <div className='productDisplayContainer'>
                                             
                 <div className='products'>
 
+                    
                     {this.state.shop.map((item)=>{
 
                     function createMarkup() { return {__html: item.short_description}; };
@@ -71,9 +74,7 @@ class ProductDisplay extends Component{
                                 </div>
                                 
 
-                        );
-
-                        
+                        );                        
                     })}
                 
                     

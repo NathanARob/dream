@@ -35,7 +35,6 @@ class BlogPage extends Component{
 
     render(){
 
-        console.log(this.props.match.params.postid);
 
         return(
             <React.Fragment>
@@ -47,7 +46,8 @@ class BlogPage extends Component{
                             <img style={blogPostPage.image} className='postImage' src={this.state.post._embedded['wp:featuredmedia'][0].source_url} alt=''/>
                         </div>
                         <h1 class='heading'>{this.state.post.title.rendered}</h1>
-                        <div dangerouslySetInnerHTML={this.createMarkup()} />
+                        <div style={blogPostPage.main} dangerouslySetInnerHTML={this.createMarkup()}/>
+                        <span>backgroundColor</span>
                     </div>
                     </div>
                  
@@ -84,6 +84,11 @@ const blogPostPage ={
     postImageContainer:{
         width:'100%',
         height:'400px'        
+    },
+    main:{
+        lineHeight:'1.5',
+        textAlign:'left',
+        paddingBottom:'20px'
     },
     image:{
         maxWidth:'100%',

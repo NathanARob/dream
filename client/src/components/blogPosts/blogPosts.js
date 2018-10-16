@@ -34,18 +34,20 @@ class BlogPostsList extends Component{
                     {this.state.posts.map((item)=>{
                         let viewURL = './posts/' + item.id;
                         
+                        function createMarkup() { return {__html: item.content.rendered}; };
+
                         
                         return( 
                             <div class='post'>
                                 {<img class='postImage' src={item._embedded['wp:featuredmedia'][0].source_url} alt=''/>}
                                 <h2 id={item.id} style={{fontSize:'2.5em'}} class='postTitle heading'>{item.title.rendered}</h2>                                
-                                    <p class='postBody'>{item.excerpt.rendered}</p>
+                                    {/* <p class='postBody'>{item.excerpt.rendered}</p> */}
+                                    <div class='postBody' dangerouslySetInnerHTML={createMarkup()}/>
                                 <br/>
                                 <div class='viewPostLink'> 
                                     
                                     <a href={viewURL} alt=''>View Post</a>
                                 </div>
-                                
                                 
                             </div>
                     )})}
