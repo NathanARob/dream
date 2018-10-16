@@ -15,7 +15,7 @@
 .shopItem{
     position:relative;
     width:45%;
-    height:500px;
+    /* height:500px; */
     margin-left:10px;
     margin-right:10px;
     margin-bottom:15px;
@@ -35,11 +35,25 @@
     font-size:1.2em;
 }
 
+.shopItemDescription{
+    position:relative;
+    height:90px;
+}
+
+.lower{
+    position:relative;
+    bottom:0;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+}
+
+
 
 
 /*Place order Button*/
 .placeOrder{
-    position:absolute;
+    /* position:absolute; */
     bottom:0;
     right:0;
 }
@@ -60,7 +74,7 @@
 
 /*Sharing buttons*/
 .sharing{
-    position:absolute;
+    /* position:absolute; */
     bottom:0;
     left:0;
 }

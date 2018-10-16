@@ -54,16 +54,18 @@ class ProductDisplay extends Component{
                                     </div>
                                    
                                     <div>
-                                        <div className='shopItemDescription'>
-                                            <div dangerouslySetInnerHTML={createMarkup()}/>
-                                        </div>
-                                        <div className='sharing'>
-                                        <FontAwesomeIcon className='shareicon pinterestShare' icon={['fab', 'pinterest']} size=''/>
-                                        <FontAwesomeIcon className='shareicon facebookShare' icon={['fab', 'facebook']} size=''/>
-                                        <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
-                                        </div>
-                                        <div className='placeOrder'>
-                                            <button>Place Order</button>
+                                        {/* <div className='shopItemDescription'> */}
+                                            <div className='shopItemDescription' dangerouslySetInnerHTML={createMarkup()}/>
+                                        {/* </div> */}
+                                        <div class='lower'>
+                                            <div className='sharing'>
+                                                <FontAwesomeIcon className='shareicon pinterestShare' icon={['fab', 'pinterest']} size=''/>
+                                                <FontAwesomeIcon className='shareicon facebookShare' icon={['fab', 'facebook']} size=''/>
+                                                <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
+                                            </div>
+                                            <div className='placeOrder'>
+                                                <button>Place Order</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
