@@ -16,7 +16,7 @@ class Products extends Component{
             <React.Fragment>
                 <HeaderSection/>
                 {this.props.match.params.category == 'all'? <ProductDisplayAll/> : null}
-                {this.props.match.params.category == 'Dreamcatcher'? <ProductDisplayDreamcatcher/> : null}
+                {this.props.match.params.category == 'Dreamcatcher'? <ProductDisplayDreamcatcher filter={this.props.match.params.category}/> : null}
                 {this.props.match.params.category == 'Charm'? <ProductDisplayCharm/> : null}
                 {this.props.match.params.category == 'String Art'? <ProductDisplayStringArt/> : null}
                 <Footer/>
@@ -54,9 +54,10 @@ class ProductDisplayAll extends Component{
     render(){
         
         return(
-            <React.Fragment>
+            <div>
 
                     <h1 className='heading'>Products</h1>
+                    <span class='categoryShowing'>Showing: All Products</span>
 
                     <div className='productDisplayContainer'>
                                                     
@@ -105,7 +106,7 @@ class ProductDisplayAll extends Component{
                         <Filter/>
                         
                     </div>
-            </React.Fragment>
+            </div>
         );
     }
 }
@@ -135,9 +136,11 @@ class ProductDisplayDreamcatcher extends Component{
     render(){
         
         return(
-            <React.Fragment>
+            <div>
 
             <h1 className='heading'>Products</h1>
+            <span class='categoryShowing'>Showing: Dreamcatchers</span>
+        
 
             <div className='productDisplayContainer'>
                                             
@@ -185,7 +188,7 @@ class ProductDisplayDreamcatcher extends Component{
                 <Filter/>
                 
             </div>
-            </React.Fragment>
+            </div>
         );
     }
 }
@@ -215,9 +218,10 @@ class ProductDisplayCharm extends Component{
     render(){
         
         return(
-            <React.Fragment>
+            <div>
 
             <h1 className='heading'>Products</h1>
+            <span class='categoryShowing'>Showing: Bag Charms</span>
 
             <div className='productDisplayContainer'>
                                             
@@ -264,8 +268,8 @@ class ProductDisplayCharm extends Component{
 
                 <Filter/>
                 
+             </div>
             </div>
-            </React.Fragment>
         );
     }
 }
@@ -294,9 +298,10 @@ class ProductDisplayStringArt extends Component{
     render(){
         
         return(
-            <React.Fragment>
+            <div>
 
             <h1 className='heading'>Products</h1>
+            <span class='categoryShowing'>Showing: String Art</span>
 
             <div className='productDisplayContainer'>
                                             
@@ -344,24 +349,51 @@ class ProductDisplayStringArt extends Component{
                 <Filter/>
                 
             </div>
-            </React.Fragment>
+            </div>
         );
     }
 }
 
 
-const Filter = ()=>{
-    return(
-<div className='filter'>
-                    <div className='filterInner'>
-                            <div id='allFilter' className='subheadingContainer'><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading' >All Products</span></div>
-                            <div id='stringArtFilter' className='subheadingContainer'><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading' >String art</span></div>
-                            <div id='charmFilter'className='subheadingContainer'><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading'>Bag Charms</span></div>
-                            <div id='dreamcatcherFilter'className='subheadingContainer'><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading'>Dreamcatcher</span></div>
-                        <br/>
+class Filter extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            selected: ''
+        };
+
+        this.setRefiner = this.setRefiner.bind(this);
+    }
+
+    setRefiner(e){
+        console.log(e);
+    }
+
+
+    render(){return(
+    <div className='filter'>
+        <span class='refineHeading'>Refine By:</span>
+                        <div className='filterInner'>
+                                <div id='allFilter' className='subheadingContainer'>
+                                    <a href='/shop/all' onClick={this.setRefiner()}><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading' >All Products</span></a>
+                                </div>
+                                <div id='stringArtFilter' className='subheadingContainer'>
+                                    <a href='/shop/String Art'><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading' >String art</span></a>
+                                </div>
+                                <div id='charmFilter'className='subheadingContainer'>
+                                    <a href='/shop/Charm'><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading'>Bag Charms</span></a>
+                                </div>
+                                <div id='dreamcatcherFilter'className='subheadingContainer'>
+                                    <a href='/shop/Dreamcatcher'><FontAwesomeIcon className='filterIcon' icon={['fa', 'arrow-circle-left']} size=''/><span className='filterSubheading'>Dreamcatcher</span></a>
+                                </div>
+                            <br/>
+                            
+                        </div>
                         
-                    </div>
-</div>
-    );
+    </div>
+        );
+    }
 }
+
+
 export default Products;

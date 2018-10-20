@@ -26,14 +26,14 @@ const Nav = () =>{
         <div className='navContainer' style={headerTheme.navContainer}>
             <div className='navContainerInner' style={headerTheme.navContainerInner}>
                 <div className='leftNav' style={headerTheme.leftNav}>
-                    <a href='' className='navItem' >About</a>
-                    <a href='' className='navItem' style={headerTheme.navItem}>Products</a>
-                    <a href='' className='navItem' style={headerTheme.navItem}>Custom Order</a>
-                    <a href='' className='navItem' style={headerTheme.navItem}>Contact</a>  
+                    <a href='/' className='navItem' >Home</a>
+                    <a href='/shop/all' className='navItem' style={headerTheme.navItem}>Products</a>
+                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Custom Order</a>
+                    <a href='/contact' className='navItem' style={headerTheme.navItem}>Contact</a>  
                 </div>
                 <div className='leftRight' style={headerTheme.rightNav}>
                     <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='insta' icon={['fab', 'instagram']} size='2x'/></a></span>
-                    <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='facebook' icon={['fab', 'facebook']} size='2x'/></a></span>
+                    <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href='https://www.facebook.com/dreamcaptureza/' target="_blank"><FontAwesomeIcon className='facebook' icon={['fab', 'facebook']} size='2x'/></a></span>
                     <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='pinterest' icon={['fab', 'pinterest']} size='2x'/></a></span>
 
                 </div>

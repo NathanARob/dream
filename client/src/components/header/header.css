@@ -15,7 +15,7 @@
 }
 
 .insta{
-    color:ivory;
+    color:white;
     transition:0.3s;
 }
 .insta:hover{
@@ -24,7 +24,7 @@
 }
 
 .facebook{
-    color:ivory;
+    color:white;
         transition:0.3s;
 }
 .facebook:hover{
@@ -33,7 +33,7 @@
 }
 
 .pinterest{
-    color:ivory;
+    color:white;
     transition:0.3s;
 }
 .pinterest:hover{
@@ -43,11 +43,11 @@
 
 .socialLink:visited{
     text-decoration:none;
-    color:ivory;
+    color:white;
 }
 
 .navItem{
-    color:ivory;
+    color:white;
     text-decoration: none;
 }
 
