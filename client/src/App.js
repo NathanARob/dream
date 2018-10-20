@@ -5,6 +5,8 @@ import './App.css';
 import HomePage from './pages/homepage';
 import BlogPage from './pages/blogpost';
 import Products from './pages/productpage';
+import ContactUsPage from './pages/contact-us';
+
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
@@ -22,6 +24,7 @@ class App extends Component {
             <Route exact path='/' component={HomePage}/>
             <Route path='/posts/:postid' component={BlogPage}/>
             <Route path='/shop/:category' component={Products}/>
+            <Route path='/contact-us' component={ContactUsPage}/>
           </Switch>
       </BrowserRouter>
         
