@@ -3,6 +3,7 @@ const path = require('path');
 const fetch = require('node-fetch')
 const app = express();
 
+const nodemailer = require('nodemailer');
 var WooCommerceAPI = require('woocommerce-api');
  
 var WooCommerce = new WooCommerceAPI({
@@ -13,6 +14,15 @@ var WooCommerce = new WooCommerceAPI({
   version: 'wc/v2'
 });
 
+
+const transporter = nodemailer.createTransport({
+  host: 'smtp.ethereal.email',
+  port: 465,
+  auth: {
+      user: 'l5bsylp57twgmo2i@ethereal.email',
+      pass: 'qQWNjFymagrDqGDndC'
+  }
+});
 
 
 // Serve static files from the React app
@@ -54,7 +64,30 @@ app.get('/api/products', (req,res)=>{
  
 });
 
+//Contact-form
+app.post('/send',(req,res)=>{
 
+  let mailOptions = {
+    from: '"Fred Foo 👻" <foo@example.com>', // sender address
+    to: 'bar@example.com, baz@example.com', // list of receivers
+    subject: 'Hello ✔', // Subject line
+    text: 'Hello world?', // plain text body
+    html: '<b>Hello world?</b>' // html body
+};
+
+transporter.sendMail(mailOptions, (error, info) => {
+        if (error) {
+            return console.log(error);
+        }
+        console.log('Message sent: %s', info.messageId);
+        // Preview only available when sending through an Ethereal account
+        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+    });
+});
+  
 
 
 

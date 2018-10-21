@@ -9,11 +9,11 @@ class ContactUsPage extends Component{
 
     render(){
         return(
-            <div>
+            <React.Fragment>
                 <HeaderSection/>
                 <ContactForm/>
                 <Footer/>
-            </div>
+            </React.Fragment>
         )
     }
 
