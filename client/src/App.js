@@ -7,6 +7,7 @@ import BlogPage from './pages/blogpost';
 import Products from './pages/productpage';
 import ContactUsPage from './pages/contact-us';
 import FullPageDescription from './pages/full-product-description';
+import OrderForm from './pages/order-form';
 
 
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -26,8 +27,8 @@ class App extends Component {
             <Route path='/posts/:postid' component={BlogPage}/>
             <Route path='/shop/:category' component={Products} exact/>
             <Route path='/shop/:category/full-description' component={FullPageDescription}/>
+            <Route path='/order/:product' component={OrderForm}/>
             <Route path='/contact-us' component={ContactUsPage}/>
-
           </Switch>
       </BrowserRouter>
         

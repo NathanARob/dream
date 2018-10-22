@@ -2,7 +2,7 @@ import React,{ Component } from 'react';
 import './orderform.css';
 
 
-class ContactForm extends Component{
+class OrderFormComponent extends Component{
     constructor(props){
         super(props);
 
@@ -52,11 +52,15 @@ class ContactForm extends Component{
                         </div>
                         <div className='formGroup'>
                             <label for='email'>Email: </label>
-                            <input type='email' id='email' className='inputControl'/>
+                            <input type='email' id='email' className='inputControl' placeholder='Invoice will be sent here'/>
                         </div>
                         <div className='formGroup'>
                             <label form='subject'>Item: </label>
-                            <input type='text' id='subject' className='inputControl'/>
+                            <input type='text' id='subject' className='inputControl' value={this.props.product}/>
+                        </div>
+                        <div className='formGroup'>
+                            <label form='quantity'>Quantity: </label>
+                            <input type='text' id='quantity' className='inputControl' value='1'/>
                         </div>
                         <div className='messageGroup'>
                             <label for='message' className='messageLabel'>Message: </label>
@@ -76,4 +80,4 @@ class ContactForm extends Component{
 }
 
 
-export default ContactForm;
+export default OrderFormComponent;

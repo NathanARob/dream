@@ -15,8 +15,8 @@ class Products extends Component{
         return(
             <React.Fragment>
                 <HeaderSection/>
-                {this.props.match.params.category == 'all'? <ProductDisplayAll/> : null}
-                {this.props.match.params.category == 'Dreamcatcher'? <ProductDisplayDreamcatcher filter={this.props.match.params.category}/> : null}
+                {this.props.match.params.category == 'all'? <ProductDisplayAll  product={this.props.match.params.category}/> : null}
+                {this.props.match.params.category == 'Dreamcatcher'? <ProductDisplayDreamcatcher/> : null}
                 {this.props.match.params.category == 'Charm'? <ProductDisplayCharm/> : null}
                 {this.props.match.params.category == 'String Art'? <ProductDisplayStringArt/> : null}
                 <Footer/>
@@ -69,7 +69,7 @@ class ProductDisplayAll extends Component{
                         
                                 function createMarkup() { return {__html: item.short_description}; };
 
-
+                                let orderRef = '/order/'+item.name;
                                 
                                 return(
                                 
@@ -95,7 +95,10 @@ class ProductDisplayAll extends Component{
                                                         <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
                                                     </div>
                                                     <div className='placeOrder'>
-                                                        <button>Place Order</button>
+                                                        
+                                                        <a href={orderRef}>
+                                                            <button>Place Order</button>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -134,6 +137,7 @@ class ProductDisplayDreamcatcher extends Component{
 
    
     render(){
+
         
         return(
             <div>
@@ -147,8 +151,14 @@ class ProductDisplayDreamcatcher extends Component{
                 <div className='products'>
                         {this.state.shop.map((item)=>{
 
+let orderRef = '/order/'+item.name;
+
+
                             if(item.categories['0'].name == 'Dreamcatcher'){
                                 function createMarkup() { return {__html: item.short_description}; };
+
+
+
                                 return(
                                     <div className='shopItem'>
                                     <div>
@@ -170,7 +180,9 @@ class ProductDisplayDreamcatcher extends Component{
                                                 <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
                                             </div>
                                             <div className='placeOrder'>
-                                                <button>Place Order</button>
+                                                <a href={orderRef}>
+                                                    <button>Place Order</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -228,6 +240,9 @@ class ProductDisplayCharm extends Component{
                 <div className='products'>
                         {this.state.shop.map((item)=>{
 
+                            let orderRef = '/order/'+item.name;
+
+
                             if(item.categories['0'].name == 'Charm'){
                                 function createMarkup() { return {__html: item.short_description}; };
                                 return(
@@ -251,7 +266,9 @@ class ProductDisplayCharm extends Component{
                                                 <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
                                             </div>
                                             <div className='placeOrder'>
-                                                <button>Place Order</button>
+                                                <a href={orderRef}>
+                                                    <button>Place Order</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -307,6 +324,9 @@ class ProductDisplayStringArt extends Component{
                                             
                 <div className='products'>
                         {this.state.shop.map((item)=>{
+                            
+                            let orderRef = '/order/'+item.name;
+
 
                             if(item.categories['0'].name == 'String Art'){
                                 function createMarkup() { return {__html: item.short_description}; };
@@ -331,7 +351,9 @@ class ProductDisplayStringArt extends Component{
                                                 <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
                                             </div>
                                             <div className='placeOrder'>
-                                                <button>Place Order</button>
+                                                <a href={orderRef}>
+                                                    <button>Place Order</button>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
