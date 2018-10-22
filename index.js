@@ -92,6 +92,54 @@ app.post('/send',(req,res)=>{
             // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
         });
 });
+
+//Order-form
+app.post('/order',(req,res)=>{
+
+;
+  console.log(req);
+
+      let mailOptions = {
+        from: 'website@dreamcapture.co.za', // sender address
+        to: 'nathan14855151@gmail.com; roxannelrobertson@gmail.com', // list of receivers
+        subject: 'Order Received',
+        name: req.body.name,
+        email: req.body.email,
+        number: req.body.number,
+        item: req.body.item,
+        quantity: req.body.quantity,
+        text: req.body.messagebody, // plain text body
+
+      
+    };
+
+    const bodyofmail = `<div>
+                            <h2>Order Received from  ${mailOptions.name}</h2>
+                            <h4>Customer Details</h4>
+                            <span>Email: ${mailOptions.email} </span> <br/>
+                            <span>Item Ordered: ${mailOptions.item}</span> <br/>
+                            <span>Quantity: ${mailOptions.quantity}</span> <br/>
+                            <span>Secial Request :</span> <br/>
+                            <p>${mailOptions.text}</p>
+                        </div>`;
+
+    mailOptions.html = bodyofmail
+                    
+
+
+
+  transporter.sendMail(mailOptions, (error, info) => {
+          if (error) {
+              return console.log(error);
+          }
+          console.log('Message sent: %s', info.messageId);
+          // Preview only available when sending through an Ethereal account
+          console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+          // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+          // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+      });
+});
   
 
 

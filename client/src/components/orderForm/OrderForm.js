@@ -10,27 +10,30 @@ class OrderFormComponent extends Component{
     }
 
     handleSubmit(e){
-        /*
+        
         e.preventDefault();
         const name = document.getElementById('name').value;
         const number = document.getElementById('contactnumber').value;
         const email = document.getElementById('email').value;
-        const subject = document.getElementById('subject').value;
-        const messagebody = document.getElementById('message').value;
+        const item = document.getElementById('item').value;
+        const quantity = document.getElementById('quantity').value;
+        const  messageBody = document.getElementById('message').value;
 
-        fetch('/send',{
+
+        fetch('/order',{
             method: 'POST',
             body: JSON.stringify({
-                name: 'name',
+                name: name,
                 number: number,
                 email: email,
-                subject: subject,
-                messagebody: messagebody
+                item: item,
+                quantity: quantity,
+                messagebody: messageBody
             }),
             headers:{"Content-type": "application/json" }
             }).then(res => res.json()).then(data => console.log(data));
 
-            */
+            
 
     }
 
@@ -55,15 +58,15 @@ class OrderFormComponent extends Component{
                             <input type='email' id='email' className='inputControl' placeholder='Invoice will be sent here'/>
                         </div>
                         <div className='formGroup'>
-                            <label form='subject'>Item: </label>
-                            <input type='text' id='subject' className='inputControl' value={this.props.product}/>
+                            <label form='item'>Item: </label>
+                            <input type='text' id='item' className='inputControl' value={this.props.product}/>
                         </div>
                         <div className='formGroup'>
                             <label form='quantity'>Quantity: </label>
                             <input type='text' id='quantity' className='inputControl' value='1'/>
                         </div>
                         <div className='messageGroup'>
-                            <label for='message' className='messageLabel'>Message: </label>
+                            <label for='message' className='messageLabel'>Any special request?: </label>
                             <textarea rows='15' columns='30' type='text' id='message' className='inputControl'/>
                         </div>
                         <br/>
