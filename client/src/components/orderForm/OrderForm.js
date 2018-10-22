@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import './contactform.css';
+import './orderform.css';
 
 
 class ContactForm extends Component{
@@ -10,6 +10,7 @@ class ContactForm extends Component{
     }
 
     handleSubmit(e){
+        /*
         e.preventDefault();
         const name = document.getElementById('name').value;
         const number = document.getElementById('contactnumber').value;
@@ -29,7 +30,7 @@ class ContactForm extends Component{
             headers:{"Content-type": "application/json" }
             }).then(res => res.json()).then(data => console.log(data));
 
-
+            */
 
     }
 
@@ -37,7 +38,7 @@ class ContactForm extends Component{
     render(){
         return(
             <div className='contactFormOutter'>
-            <h1 className='heading'>Get in touch</h1>
+            <h1 className='heading'>Order Form</h1>
             
                 <div className='contactFormInner'>
                     <form className='contactForm' >
@@ -54,7 +55,7 @@ class ContactForm extends Component{
                             <input type='email' id='email' className='inputControl'/>
                         </div>
                         <div className='formGroup'>
-                            <label form='subject'>Subject: </label>
+                            <label form='subject'>Item: </label>
                             <input type='text' id='subject' className='inputControl'/>
                         </div>
                         <div className='messageGroup'>
@@ -62,7 +63,7 @@ class ContactForm extends Component{
                             <textarea rows='15' columns='30' type='text' id='message' className='inputControl'/>
                         </div>
                         <br/>
-                        <button className='submitButton' onClick={this.handleSubmit}>Send</button>
+                        <button className='submitButton' onClick={this.handleSubmit}>Place Order</button>
                         
                     
                     

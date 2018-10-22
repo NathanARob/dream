@@ -27,9 +27,9 @@ const Nav = () =>{
             <div className='navContainerInner' style={headerTheme.navContainerInner}>
                 <div className='leftNav' style={headerTheme.leftNav}>
                     <a href='/' className='navItem' >Home</a>
-                    <a href='/shop/all' className='navItem' style={headerTheme.navItem}>Products</a>
-                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Custom Order</a>
-                    <a href='/contact' className='navItem' style={headerTheme.navItem}>Contact</a>  
+                    <a href='/shop/all' className='navItem' style={headerTheme.navItem}>Shope</a>
+                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Place Custom Order</a>
+                    <a href='/contact-us' className='navItem' style={headerTheme.navItem}>Contact</a>  
                 </div>
                 <div className='leftRight' style={headerTheme.rightNav}>
                     <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='insta' icon={['fab', 'instagram']} size='2x'/></a></span>

@@ -1,4 +1,5 @@
 const express = require('express');
+var bodyParser = require('body-parser')
 const path = require('path');
 const fetch = require('node-fetch')
 const app = express();
@@ -16,17 +17,18 @@ var WooCommerce = new WooCommerceAPI({
 
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.ethereal.email',
+  host: 'serv15.registerdomain.co.za',
   port: 465,
   auth: {
-      user: 'l5bsylp57twgmo2i@ethereal.email',
-      pass: 'qQWNjFymagrDqGDndC'
+      user: 'website@dreamcapture.co.za',
+      pass: 'lXqQGXpRRo%)'
   }
 });
 
-
+app.use(bodyParser.json());
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
+
 
 // Put all API endpoints under '/api'
 app.get('/api/passwords', (req, res) => {
@@ -67,25 +69,28 @@ app.get('/api/products', (req,res)=>{
 //Contact-form
 app.post('/send',(req,res)=>{
 
-  let mailOptions = {
-    from: '"Fred Foo 👻" <foo@example.com>', // sender address
-    to: 'bar@example.com, baz@example.com', // list of receivers
-    subject: 'Hello ✔', // Subject line
-    text: 'Hello world?', // plain text body
-    html: '<b>Hello world?</b>' // html body
-};
 
-transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-            return console.log(error);
-        }
-        console.log('Message sent: %s', info.messageId);
-        // Preview only available when sending through an Ethereal account
-        console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+    console.log(req);
 
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-        // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-    });
+        let mailOptions = {
+          from: 'website@dreamcapture.co.za', // sender address
+          to: 'nathan14855151@gmail.com', // list of receivers
+          subject: req.body.subject,
+          text: req.body.message, // plain text body
+        // html: '<b>Hello world?</b>' // html body
+      };
+
+    transporter.sendMail(mailOptions, (error, info) => {
+            if (error) {
+                return console.log(error);
+            }
+            console.log('Message sent: %s', info.messageId);
+            // Preview only available when sending through an Ethereal account
+            console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+            // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+            // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
+        });
 });
   
 
