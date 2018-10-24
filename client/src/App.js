@@ -12,8 +12,8 @@ import OrderForm from './pages/order-form';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { faCheckSquare, faCoffee, faEnvelope, faArrowAltCircleLeft, faArrowCircleLeft } from '@fortawesome/free-solid-svg-icons'
-library.add(fab, faEnvelope, faArrowCircleLeft)
+import { faCheckSquare, faCoffee, faEnvelope, faArrowAltCircleLeft, faArrowCircleLeft, faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+library.add(fab, faEnvelope, faArrowCircleLeft, faShoppingCart)
 
 
 

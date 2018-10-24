@@ -12,15 +12,22 @@
 .shopCategory{
     position:relative;
     width:30%;
-    height:200px;
     margin:15px;    
-    background-image: url('https://images.unsplash.com/photo-1533382433768-3d403240fa40?ixlib=rb-0.3.5&s=bd7a3d5a68e7aab801aafd691c0434ca&auto=format&fit=crop&w=300&q=80');
     background-position: center;
     background-size:cover;
     /* border-radius:10px; */
 }
 
+.shopCaption{
+    font-family: 'Amatic SC', cursive;
+    font-weight:bold;
+    padding:10px;
+    font-size:1.5em;
+}
 
+.cartIcon{
+    font-size:1.5em;
+}
 .categoryTitle{
     height:100%;
     /* background-color:rgba(0,0,0,0.3);     */

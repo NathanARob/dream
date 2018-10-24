@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
-import Background from '../../images/calltoaction.jpeg'
+import Background from '../../images/header.png'
+import './calltoaction.css';
 
 
 const CallToActionStyle = {
     container:{
         position:"relative",
         width:"100%",
-        height:"60vh",
         backgroundColor:"Grey",
-        backgroundImage: `url(${Background})`,
-        backgroundSize: "cover"
+        //backgroundImage: "url('https://images.unsplash.com/photo-1534237910030-668b79930128?ixlib=rb-0.3.5&s=a8aadc37d7bbe97c3b49534058d22240&auto=format&fit=crop&w=1500&q=80')",
+       backgroundImage: `url(${Background})`,
+       backgroundSize: "cover"
     },
      inner:{
         display:"flex",
@@ -20,17 +21,18 @@ const CallToActionStyle = {
         backgroundColor:'rgba(0,0,0,0.2)',
      },
      tag:{
-         fontSize:"3em",
+         fontSize:"4em",
          fontWeight:"bold",
-         color: "#8ee2fe",
+         color: "white",
 
      },
      buttonLeft:{
         marginRight:"5px",
         padding:"10px",
-        backgroundColor:"orange",
-        border:"solid orange",
-        borderRadius:"10px"
+        backgroundColor:"#8CCDB0",
+        border:"solid #8CCDB0",
+        borderRadius:"15px",
+        color:"#4d4d48"
 
      },
      buttonRight:{
@@ -38,7 +40,7 @@ const CallToActionStyle = {
         padding:"10px",
         backgroundColor:"green",
         border:"solid green",
-        borderRadius:"10px"
+        borderRadius:"15px"
 
      }
 }
