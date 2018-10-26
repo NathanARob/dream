@@ -61,10 +61,10 @@ class OrderFormComponent extends Component{
                             <label form='item'>Item: </label>
                             <input type='text' id='item' className='inputControl' value={this.props.product}/>
                         </div>
-                        <div className='formGroup'>
+                        {/* <div className='formGroup'>
                             <label form='quantity'>Quantity: </label>
                             <input type='text' id='quantity' className='inputControl' value='1'/>
-                        </div>
+                        </div> */}
                         <div className='messageGroup'>
                             <label for='message' className='messageLabel'>Any special request?: </label>
                             <textarea rows='15' columns='30' type='text' id='message' className='inputControl'/>

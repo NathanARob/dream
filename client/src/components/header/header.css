@@ -1,3 +1,11 @@
+.headerSection{
+    position:fixed;
+    width:100%;
+    z-index:1000;
+    box-shadow:0 5px 5px #292929;
+    top:0;
+}
+
 .logoHolder{
     height:130px;
     background-color:#1E404E;
@@ -49,5 +57,7 @@
 .navItem{
     color:white;
     text-decoration: none;
+    font-size:1.1em;
+    padding-right:10px;
 }
 

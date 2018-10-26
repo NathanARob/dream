@@ -7,8 +7,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const HeaderSection = () => {
         
     return (
-        <div>
-            <div class='logoHolder'>
+        <div className='headerSection'>
+            <div className='logoHolder'>
                  <a href='/'><img id='logoImage' src={require('../../images/logo.jpg')} alt='logo'/></a>
             </div>
             <Nav/>
@@ -27,8 +27,8 @@ const Nav = () =>{
             <div className='navContainerInner' style={headerTheme.navContainerInner}>
                 <div className='leftNav' style={headerTheme.leftNav}>
                     <a href='/' className='navItem' >Home</a>
-                    <a href='/shop/all' className='navItem' style={headerTheme.navItem}>Shope</a>
-                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Place Custom Order</a>
+                    <a href='/shop/all' className='navItem' style={headerTheme.navItem}>Shop</a>
+                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Custom Order</a>
                     <a href='/contact-us' className='navItem' style={headerTheme.navItem}>Contact</a>  
                 </div>
                 <div className='leftRight' style={headerTheme.rightNav}>

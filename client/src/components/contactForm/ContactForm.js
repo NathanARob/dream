@@ -57,8 +57,9 @@ class ContactForm extends Component{
                             <label form='subject'>Subject: </label>
                             <input type='text' id='subject' className='inputControl'/>
                         </div>
+                        <br/>
                         <div className='messageGroup'>
-                            <label for='message' className='messageLabel'>Message: </label>
+                            <label for='message' className='messageLabel'>Have a query or want to place a custom order? Let us know below </label>
                             <textarea rows='15' columns='30' type='text' id='message' className='inputControl'/>
                         </div>
                         <br/>

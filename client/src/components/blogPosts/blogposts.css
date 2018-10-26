@@ -1,4 +1,8 @@
 /*Blog Posts Container*/
+#blogPostsList{
+    height:calc(100vh - 180px);
+}
+
 #blogPosts{
     width:70%;
     display:flex;

@@ -13,14 +13,14 @@ class Products extends Component{
     render(){
         console.log(this.props.match.params.category);
         return(
-            <React.Fragment>
+            <div className='productjesus'>
                 <HeaderSection/>
                 {this.props.match.params.category == 'all'? <ProductDisplayAll  product={this.props.match.params.category}/> : null}
                 {this.props.match.params.category == 'Dreamcatcher'? <ProductDisplayDreamcatcher/> : null}
                 {this.props.match.params.category == 'Charm'? <ProductDisplayCharm/> : null}
                 {this.props.match.params.category == 'String Art'? <ProductDisplayStringArt/> : null}
                 <Footer/>
-            </React.Fragment>
+            </div>
 
            
         );

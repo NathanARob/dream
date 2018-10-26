@@ -1,0 +1,19 @@
+.contactFormOutter{
+    padding-top:180px;
+    padding-bottom:100px;
+}
+
+.submitButton{
+    background-color:#5b7d76;
+    border:#5b7d76;
+    color:white;
+    padding:15px;
+    width: 200px;
+    font-size:1.2em;
+    transition:0.5s;
+}
+
+.submitButton:hover{
+    cursor:pointer;
+    background-color:#28a745;
+}

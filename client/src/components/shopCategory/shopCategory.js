@@ -16,15 +16,17 @@ class ShopByCategory extends Component{
         
             return (
                 <div id='shopCategoryContainer'>
-                <h2 class='heading'><span class='purchase'>Purchase</span>  Handmade Craft Items</h2>
+                <h2 class='heading productHeading'><span class='purchase'>Purchase</span>  Handmade Craft Items</h2>
                     <div id='shopCategories'>
 
-                        <div class='shopCategory'>
-                            <div class='categoryTitle'><img src={require('../../images/string-art.jpg')}/></div>
-                            <div>
-                                   <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
-                                   <span class='shopCaption'>String Art</span>  
-
+                        <div className='shopCategory'>
+                            <div className='categoryTitle'><img src={require('../../images/string-art.jpg')}/></div>
+                            <div className='iconHolder'>
+                                <div>                                    
+                                        <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
+                                        <a className='shopLink' href='/shop/string art'> <span className='shopCaption'>String Art</span>   </a>
+                                  
+                                </div>
                             </div>
 
 
@@ -34,21 +36,24 @@ class ShopByCategory extends Component{
                             <div class='categoryTitle'>
                                 <img src={require('../../images/charms.jpg')}/>
 
-                                <div>
-                                   <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
-                                   <span class='shopCaption'>Bag Charms</span>  
+                                <div className='iconHolder'>
+                                    <div>
+                                        <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
+                                        <span className='shopCaption'>Bag Charms</span> 
+                                    </div> 
 
                                 </div>
                             </div>
                            
                         </div>
 
-                        <div class='shopCategory'>
-                            <div class='categoryTitle'><img src={require('../../images/dreamcatcher.jpg')}/></div>
-                            <div>
-                                   <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
-                                   <span class='shopCaption'>Dreamcatchers</span>  
-
+                        <div className='shopCategory'>
+                            <div className='categoryTitle'><img src={require('../../images/dreamcatcher.jpg')}/></div>
+                                <div className='iconHolder'>
+                                    <div>
+                                        <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
+                                        <span className='shopCaption'>Dreamcatchers</span>  
+                                    </div>
                                 </div>
                         </div>
                     

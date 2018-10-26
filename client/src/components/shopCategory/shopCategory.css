@@ -1,7 +1,10 @@
 #shopCategoryContainer{
     width:70%;
     margin:0 auto;
+    height:calc(100vh - 180px);
+
 }
+
 
 #shopCategories{
     display:flex;
@@ -56,3 +59,36 @@
     font-size:1.4em;
 }
 
+.iconHolder{
+    position:absolute;
+    width:100%;
+    z-index:100;
+    margin:0 auto;
+    font-size:1.2em;
+    color:#ededed;
+    transition:0.5s;
+}
+
+.iconHolder div{
+    background-color:#5b7d76;
+    margin-top:-20px;
+    transition:0.5s;
+}
+
+.iconHolder div a{
+    color:white;
+}
+
+.shopLink:visited{
+    text-decoration:none;
+}
+
+.iconHolder:hover{
+    color:white;
+    cursor:pointer;
+}
+
+.iconHolder div:hover{
+    background-color:rgb(0, 128, 21);
+    cursor:pointer;
+}

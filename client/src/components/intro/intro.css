@@ -1,9 +1,53 @@
 #introContainer{
+    margin:0 auto;
+    height:calc(100vh - 180px);
+  /*  background-image:url('../../images/header.png'); */
+    background-size:cover;
+    width:100%;
+    
+}
+/*
+.background{
+    background-color:rgba(255,255,255,0.2);
+    height:100%;
+}
+*/
+.introText{
     width:70%;
     margin:0 auto;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    height:70%;
+}
+
+.bigwords{
+    padding-top:15px
+}
+
+.welcometo{
+    font-size:5em;
+    font-family:'Open Sans','Roboto';
+    font-weight:bold;
+    display:block;
+    text-align:left;
+}
+
+.companyname{
+    font-size:11em;
+    font-weight:900;
+    text-align:left;
+    display:block;
+    font-style:italic;
 }
 
 #introText{
     line-height: 1.4;
+    text-align:left;
+}
+
+.introPara{
+    font-family:'Open Sans';
+    line-height:1.5;
     text-align:left;
 }
