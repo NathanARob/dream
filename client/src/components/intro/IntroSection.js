@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './intro.css';
-import Background from '../../images/header.png'
+import Dreamcatcher from '../../images/Dreamcatcher-nobackground.png'
 
 
 const IntroSection = () => {
         
     return (
         <div id='introContainer'>
-            <div className='background'>
                 <div className='introText'>
                     <div className='bigwords'>
                         <span className='welcometo'>Welcome to</span>
@@ -19,7 +18,6 @@ const IntroSection = () => {
                     </p>
                 </div>
             </div>    
-        </div>
     );
 
 }

@@ -74,11 +74,28 @@ app.post('/send',(req,res)=>{
 
         let mailOptions = {
           from: 'website@dreamcapture.co.za', // sender address
-          to: 'nathan14855151@gmail.com', // list of receivers
+          to: 'nathan14855151@gmail.com; roxannelrobertson@gmail.com', // list of receivers
+          subject: 'Enquiry Received',
+          name: req.body.name,
+          email: req.body.email,
+          number: req.body.number,
           subject: req.body.subject,
-          text: req.body.message, // plain text body
-        // html: '<b>Hello world?</b>' // html body
+          //quantity: req.body.quantity,
+          text: req.body.messagebody, // plain text body
+  
       };
+
+      const bodyofmail = `<div>
+                            <h2>Enquiry Received from  ${mailOptions.name}</h2>
+                            <h4>Customer Details</h4>
+                            <span>Email: ${mailOptions.email} </span> <br/>
+                            <span>Subject: ${mailOptions.subject}</span> <br/>
+                            <span>Quantity: ${mailOptions.quantity}</span> <br/>
+                            <span>Secial Request :</span> <br/>
+                            <p>${mailOptions.text}</p>
+                        </div>`;
+
+    mailOptions.html = bodyofmail
 
     transporter.sendMail(mailOptions, (error, info) => {
             if (error) {

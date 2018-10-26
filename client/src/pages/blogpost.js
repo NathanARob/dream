@@ -45,7 +45,7 @@ class BlogPage extends Component{
                         <div className='postImageContainer' style={blogPostPage.postImageContainer}>
                             <img style={blogPostPage.image} className='postImage' src={this.state.post._embedded['wp:featuredmedia'][0].source_url} alt=''/>
                         </div>
-                        <h1 className='heading'>{this.state.post.title.rendered}</h1>
+                        <h1 className='heading' style={{color:'#8b5382'}}>{this.state.post.title.rendered}</h1>
                         <div style={blogPostPage.main} dangerouslySetInnerHTML={this.createMarkup()}/>
                         <br/>
                         <a className='backButton' href='/#blogPostList' alt='Back Home'>Back</a>

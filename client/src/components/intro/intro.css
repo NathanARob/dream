@@ -1,10 +1,12 @@
 #introContainer{
     margin:0 auto;
-    height:calc(100vh - 180px);
+    /*height:calc(100vh - 180px);*/
   /*  background-image:url('../../images/header.png'); */
     background-size:cover;
     width:100%;
-    padding-top:60px
+    padding-top:60px;
+    display:flex;
+    padding-bottom:60px;
     
 }
 /*
@@ -28,14 +30,14 @@
 
 .welcometo{
     font-size:3em;
-    font-family:'Open Sans','Roboto';
+    font-family: 'Amatic SC';
     font-weight:bold;
     display:block;
     text-align:left;
 }
 
 .companyname{
-    font-size:5em;
+    font-size:7em;
     font-weight:900;
     text-align:left;
     display:block;
@@ -56,8 +58,12 @@
 
 .dream{
     color:#5c7d76;
+    font-family: 'Amatic SC';
+    font-weight:bold;
 }
 
 .capture{
     color:#555651;
+    font-family: 'Amatic SC';
+    font-weight:bold;
 }

@@ -15,6 +15,7 @@
     background-color:white;
     width:30%;
     margin:10px;
+    border:#a3d7c0;
 }
 
 .postImage{
@@ -28,7 +29,7 @@
     display:block;
     font-size:1em;
     font-weight:bold;
-    color: #ec7931;
+    color: #8b5382;
 
 }
 
@@ -46,13 +47,16 @@
     padding:5px;
     text-decoration: none;
     font-size:1em;
-    text-align: right;
-
+    text-align: center;
+    background-color:#8b5382;
+    
 }
 
 .viewPostLink a{
+    display:block;
+    
     text-decoration: none;
-    color: #ec7931;
+    color: white;
     font-size:1em;
 }
 .viewPostLink:visited{
@@ -67,5 +71,6 @@
     width: 200px;
     font-size:1.2em;
     transition:0.5s;
+    text-decoration:none;
 }
 

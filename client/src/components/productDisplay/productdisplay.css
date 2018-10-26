@@ -122,21 +122,32 @@
 #allFilter:hover{
     background-color:#5b7d76;
     cursor:pointer;
+    font-family:'Roboto';
+    text-decoration:none;
 }
 
 #charmFilter:hover{
     background-color:#5b7d76;
     cursor:pointer;
+    font-family:'Roboto';
+    text-decoration:none;
+
 }
 
 #stringArtFilter:hover{
     background-color:#5b7d76;
     cursor:pointer;
+    font-family:'Roboto';
+    text-decoration:none;
+
 }
 
 #dreamcatcherFilter:hover{
     background-color:#5b7d76;
     cursor:pointer;
+    font-family:'Roboto';
+    text-decoration:none;
+
 }
 .filterIcon:hover{
 color:pink;
@@ -172,7 +183,12 @@ color:pink;
 .filterSubheading{
     font-size:0.9em;
     color:white;
+    text-decoration:none;
 
+}
+
+.filterSubheading:visited{
+    text-decoration:none;
 }
 
 .filterIcon{
@@ -186,10 +202,13 @@ color:pink;
     display:block;
     padding:10px;
     font-size:1.5em;
-    font-family:'Amatic SC', cursive;
+    font-family:'Roboto', cursive;
     font-weight:bold;
     color:white;
+    text-decoration:none;
 }
+
+
 
 .categoryShowing{
     display:block;
@@ -197,8 +216,6 @@ color:pink;
     color:green;
     padding-bottom:10px;
     font-size:1.5em;
-    
-
 }
 
 

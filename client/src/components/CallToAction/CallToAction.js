@@ -30,7 +30,7 @@ const CallToActionStyle = {
         marginRight:"5px",
         padding:"15px",
         backgroundColor:"rgba(140,205,176,0.8)",
-        border:"solid #8CCDB0",
+        border:"solid #4d4d48",
         borderRadius:"15px",
         color:"#4d4d48",
         fontSize:'1.2em',

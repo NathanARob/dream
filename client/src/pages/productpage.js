@@ -89,11 +89,11 @@ class ProductDisplayAll extends Component{
                                                     <div className='shopItemDescription' dangerouslySetInnerHTML={createMarkup()}/>
                                                 {/* </div> */}
                                                 <div class='lower'>
-                                                    <div className='sharing'>
+                                                    {/* <div className='sharing'>
                                                         <FontAwesomeIcon className='shareicon pinterestShare' icon={['fab', 'pinterest']} size=''/>
                                                         <FontAwesomeIcon className='shareicon facebookShare' icon={['fab', 'facebook']} size=''/>
                                                         <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
-                                                    </div>
+                                                    </div> */}
                                                     <div className='placeOrder'>
                                                         
                                                         <a href={orderRef}>
@@ -174,11 +174,11 @@ let orderRef = '/order/'+item.name;
                                     <div>
                                             <div className='shopItemDescription' dangerouslySetInnerHTML={createMarkup()}/>
                                         <div class='lower'>
-                                            <div className='sharing'>
+                                            {/* <div className='sharing'>
                                                 <FontAwesomeIcon className='shareicon pinterestShare' icon={['fab', 'pinterest']} size=''/>
                                                 <FontAwesomeIcon className='shareicon facebookShare' icon={['fab', 'facebook']} size=''/>
                                                 <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
-                                            </div>
+                                            </div> */}
                                             <div className='placeOrder'>
                                                 <a href={orderRef}>
                                                     <button>Place Order</button>
@@ -260,11 +260,11 @@ class ProductDisplayCharm extends Component{
                                     <div>
                                             <div className='shopItemDescription' dangerouslySetInnerHTML={createMarkup()}/>
                                         <div class='lower'>
-                                            <div className='sharing'>
+                                            {/* <div className='sharing'>
                                                 <FontAwesomeIcon className='shareicon pinterestShare' icon={['fab', 'pinterest']} size=''/>
                                                 <FontAwesomeIcon className='shareicon facebookShare' icon={['fab', 'facebook']} size=''/>
                                                 <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
-                                            </div>
+                                            </div> */}
                                             <div className='placeOrder'>
                                                 <a href={orderRef}>
                                                     <button>Place Order</button>
@@ -345,11 +345,11 @@ class ProductDisplayStringArt extends Component{
                                     <div>
                                             <div className='shopItemDescription' dangerouslySetInnerHTML={createMarkup()}/>
                                         <div class='lower'>
-                                            <div className='sharing'>
+                                            {/* <div className='sharing'>
                                                 <FontAwesomeIcon className='shareicon pinterestShare' icon={['fab', 'pinterest']} size=''/>
                                                 <FontAwesomeIcon className='shareicon facebookShare' icon={['fab', 'facebook']} size=''/>
                                                 <FontAwesomeIcon className='shareicon emailShare' icon={['fa', 'envelope']} size=''/>
-                                            </div>
+                                            </div> */}
                                             <div className='placeOrder'>
                                                 <a href={orderRef}>
                                                     <button>Place Order</button>
