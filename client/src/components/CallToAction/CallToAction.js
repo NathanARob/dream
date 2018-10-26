@@ -21,26 +21,35 @@ const CallToActionStyle = {
         backgroundColor:'rgba(0,0,0,0.2)',
      },
      tag:{
-         fontSize:"4em",
+         fontSize:"6em",
          fontWeight:"bold",
          color: "white",
 
      },
      buttonLeft:{
         marginRight:"5px",
-        padding:"10px",
-        backgroundColor:"#8CCDB0",
+        padding:"15px",
+        backgroundColor:"rgba(140,205,176,0.8)",
         border:"solid #8CCDB0",
         borderRadius:"15px",
-        color:"#4d4d48"
+        color:"#4d4d48",
+        fontSize:'1.2em',
+        fontFamily:'Roboto',
+        textDecoration:'none'
 
      },
      buttonRight:{
         marginLeft:"5px",
-        padding:"10px",
-        backgroundColor:"green",
-        border:"solid green",
-        borderRadius:"15px"
+        padding:"15px",
+        backgroundColor:"rgba(0,0,0,0)",
+        border:"solid #ededed",
+        borderRadius:"15px",
+        color:"#ededed",
+        fontSize:'1.2em',
+        fontFamily:'Roboto',
+        textDecoration:'none'
+   
+        
 
      }
 }
@@ -54,10 +63,10 @@ class CallToAction extends Component{
             <div id='CallToAction' style={CallToActionStyle.container}>
                 <div id='CallToActionInner' style={CallToActionStyle.inner}>
                     <div>
-                        <h1 className='heading' style={CallToActionStyle.tag}>Like what you see? Want something custom</h1>
+                        <h1 className='heading' style={CallToActionStyle.tag}>Please place a cool tagline here</h1>
                     
-                        <button style={CallToActionStyle.buttonLeft}>Place an order</button>
-                        <button style={CallToActionStyle.buttonRight}>Request quote</button>
+                        <a href='/shop/all' className='buttonLeft' style={CallToActionStyle.buttonLeft}>View Products</a>
+                        <a href='/contact-us' className='buttonRight' style={CallToActionStyle.buttonRight}>Custom quote</a>
                     </div>
                 </div>
             </div>

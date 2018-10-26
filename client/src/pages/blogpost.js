@@ -45,9 +45,10 @@ class BlogPage extends Component{
                         <div className='postImageContainer' style={blogPostPage.postImageContainer}>
                             <img style={blogPostPage.image} className='postImage' src={this.state.post._embedded['wp:featuredmedia'][0].source_url} alt=''/>
                         </div>
-                        <h1 class='heading'>{this.state.post.title.rendered}</h1>
+                        <h1 className='heading'>{this.state.post.title.rendered}</h1>
                         <div style={blogPostPage.main} dangerouslySetInnerHTML={this.createMarkup()}/>
-                        <span>backgroundColor</span>
+                        <br/>
+                        <a className='backButton' href='/#blogPostList' alt='Back Home'>Back</a>
                     </div>
                     </div>
                  
@@ -78,17 +79,21 @@ const blogPostPage ={
         backgroundColor:'white',
         paddingLeft:'10px',
         paddingRight:'10px',
+        paddingTop:'180px'
         
         
     },
     postImageContainer:{
         width:'100%',
-        height:'400px'        
     },
     main:{
-        lineHeight:'1.5',
+        lineHeight:'1.7',
         textAlign:'left',
-        paddingBottom:'20px'
+        paddingBottom:'50px',
+        fontFamily:'Roboto',
+        paddingLeft:'10px',
+        paddingRight:'10px'
+
     },
     image:{
         maxWidth:'100%',

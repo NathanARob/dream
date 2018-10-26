@@ -1,6 +1,7 @@
 /*Blog Posts Container*/
 #blogPostsList{
     height:calc(100vh - 180px);
+    padding-bottom:100px;
 }
 
 #blogPosts{
@@ -21,13 +22,13 @@
     max-width:100%;
     width:100%;
     padding:0;
-    max-height:200px;
 }
 
 .postTitle{
     display:block;
     font-size:1em;
-    color: #12bbc2;
+    font-weight:bold;
+    color: #ec7931;
 
 }
 
@@ -51,9 +52,20 @@
 
 .viewPostLink a{
     text-decoration: none;
-    color: #12bbc2;
-    font-size:0.8em;
+    color: #ec7931;
+    font-size:1em;
 }
 .viewPostLink:visited{
     text-decoration: none;
 }
+
+.backButton{
+    background-color:#5b7d76;
+    border:#5b7d76;
+    color:white;
+    padding:15px;
+    width: 200px;
+    font-size:1.2em;
+    transition:0.5s;
+}
+

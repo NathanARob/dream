@@ -78,6 +78,9 @@
 .iconHolder div a{
     color:white;
 }
+.shopLink{
+    text-decoration: none;
+}
 
 .shopLink:visited{
     text-decoration:none;
@@ -90,5 +93,23 @@
 
 .iconHolder div:hover{
     background-color:rgb(0, 128, 21);
+    cursor:pointer;
+}
+
+
+.customOrder{
+    padding-top:70px;
+    font-family: 'Roboto', sans-serif; 
+    font-size:1.3em;
+}
+
+.customOrder a{
+    text-decoration: none;
+    color: #ec7931;
+}
+
+
+.customOrder a:visited{
+    text-decoration:none;
     cursor:pointer;
 }

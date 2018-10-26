@@ -29,6 +29,7 @@ class BlogPostsList extends Component{
 
         return(
             <div id='blogPostsList'>
+                <h2 className='heading'>Crafty Blog</h2>
                 
                 <div id='blogPosts'>
                     {this.state.posts.map((item)=>{

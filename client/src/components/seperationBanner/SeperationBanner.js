@@ -9,7 +9,6 @@ const SeperationBanner = (props) => {
             <div id='seperationBannerInner'>
             </div>
         
-            
         </div>
     );
 

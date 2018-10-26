@@ -11,7 +11,7 @@ const IntroSection = () => {
                 <div className='introText'>
                     <div className='bigwords'>
                         <span className='welcometo'>Welcome to</span>
-                        <span className='heading companyname'>Dream Capture</span>
+                        <span className='companyname'><span className='dream'>Dream</span><span className='capture'> Capture</span></span>
                     </div>
                     <p className='introPara'>
                         I have always loved crafting and creating, and it has always been a dream of mine to be able to create beautiful pieces and share my creations with the world. Dream Capture is my vessel to do so! I take inspiration from things around me, online – Pinterest especially! I try to create things I would love to see and own myself, and of course I love getting requests as well. 

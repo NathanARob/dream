@@ -28,7 +28,7 @@ const Nav = () =>{
                 <div className='leftNav' style={headerTheme.leftNav}>
                     <a href='/' className='navItem' >Home</a>
                     <a href='/shop/all' className='navItem' style={headerTheme.navItem}>Shop</a>
-                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Custom Order</a>
+                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Blog Posts</a>
                     <a href='/contact-us' className='navItem' style={headerTheme.navItem}>Contact</a>  
                 </div>
                 <div className='leftRight' style={headerTheme.rightNav}>

@@ -24,8 +24,9 @@ class ShopByCategory extends Component{
                             <div className='iconHolder'>
                                 <div>                                    
                                         <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
-                                        <a className='shopLink' href='/shop/string art'> <span className='shopCaption'>String Art</span>   </a>
-                                  
+                                        <a className='shopLink' href='/shop/String Art'>
+                                            <span className='shopCaption'>String Art</span>
+                                        </a>                 
                                 </div>
                             </div>
 
@@ -39,7 +40,9 @@ class ShopByCategory extends Component{
                                 <div className='iconHolder'>
                                     <div>
                                         <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
-                                        <span className='shopCaption'>Bag Charms</span> 
+                                        <a className='shopLink' href='/shop/Charm'> 
+                                            <span className='shopCaption'>Bag Charms</span> 
+                                        </a>
                                     </div> 
 
                                 </div>
@@ -52,12 +55,17 @@ class ShopByCategory extends Component{
                                 <div className='iconHolder'>
                                     <div>
                                         <FontAwesomeIcon className='cartIcon' icon={['fa', 'shopping-cart']} size=''/>
-                                        <span className='shopCaption'>Dreamcatchers</span>  
+                                        <a className='shopLink' href='/shop/Dreamcatcher'> 
+                                            <span className='shopCaption'>Dreamcatchers</span>
+                                        </a>  
                                     </div>
                                 </div>
                         </div>
                     
-                    </div>            
+                    </div>  
+                    <div>
+                        <h4 className='customOrder'>If you would like to place a custom order for special event please <a href='/contact-us' alt='contact us'>Contact Us</a></h4>         
+                    </div> 
                 </div>
             );
     }

@@ -2,3 +2,21 @@
     height:calc(100vh - 180px);
     padding-top:180px;
 }
+
+.buttonLeft{
+    transition:0.5s;
+}
+
+.buttonLeft:hover{
+    box-shadow:5px 5px 5px black;
+    cursor:pointer;
+}
+
+.buttonRight{
+    transition:0.5s;
+}
+
+.buttonRight:hover{
+    background-color:green;
+    cursor:pointer;
+}
