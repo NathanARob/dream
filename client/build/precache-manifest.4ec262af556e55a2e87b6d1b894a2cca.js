@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/static/media/Dreamcatcher-nobackground.6cfc7b7c.png"
   },
   {
-    "revision": "5c9cd074c6d7e57834c0",
-    "url": "/static/css/main.bd5e25da.chunk.css"
+    "revision": "619add6a5f88cb6bd1ac",
+    "url": "/static/css/main.d8d0477b.chunk.css"
   },
   {
-    "revision": "6766fecf3f0c7fb9976e",
-    "url": "/static/js/1.6766fecf.chunk.js"
+    "revision": "782f1fd975ff9b08d4d6",
+    "url": "/static/js/1.782f1fd9.chunk.js"
   },
   {
     "revision": "229c360febb4351a89df",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/logo.7ab4066a.jpg"
   },
   {
-    "revision": "5c9cd074c6d7e57834c0",
-    "url": "/static/js/main.5c9cd074.chunk.js"
+    "revision": "619add6a5f88cb6bd1ac",
+    "url": "/static/js/main.619add6a.chunk.js"
   },
   {
     "revision": "72a871b0feb1accd8fae3ebed076685c",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/media/banner.2066997b.png"
   },
   {
-    "revision": "6ca6f4607e4ddd828f7e60d41d60edf3",
+    "revision": "135a3fab5cb4a3608f6d2d4e96b01dac",
     "url": "/index.html"
   }
 ];

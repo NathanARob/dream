@@ -28,13 +28,13 @@ const Nav = () =>{
                 <div className='leftNav' style={headerTheme.leftNav}>
                     <a href='/' className='navItem' >Home</a>
                     <a href='/shop/all' className='navItem' style={headerTheme.navItem}>Shop</a>
-                    <a href='/orderform' className='navItem' style={headerTheme.navItem}>Blog Posts</a>
+                    {/* <a href='/orderform' className='navItem' style={headerTheme.navItem}>Blog Posts</a> */}
                     <a href='/contact-us' className='navItem' style={headerTheme.navItem}>Contact</a>  
                 </div>
                 <div className='leftRight' style={headerTheme.rightNav}>
-                    <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='insta' icon={['fab', 'instagram']} size='2x'/></a></span>
+                    {/* <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='insta' icon={['fab', 'instagram']} size='2x'/></a></span> */}
                     <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href='https://www.facebook.com/dreamcaptureza/' target="_blank"><FontAwesomeIcon className='facebook' icon={['fab', 'facebook']} size='2x'/></a></span>
-                    <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='pinterest' icon={['fab', 'pinterest']} size='2x'/></a></span>
+                    {/* <span className='navItemSocial' style={headerTheme.navItemSocial}><a className='socialLink' href=''><FontAwesomeIcon className='pinterest' icon={['fab', 'pinterest']} size='2x'/></a></span> */}
 
                 </div>
             </div>

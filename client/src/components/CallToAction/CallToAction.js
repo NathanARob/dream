@@ -63,7 +63,7 @@ class CallToAction extends Component{
             <div id='CallToAction' style={CallToActionStyle.container}>
                 <div id='CallToActionInner' style={CallToActionStyle.inner}>
                     <div>
-                        <h1 className='heading' style={CallToActionStyle.tag}>Please place a cool tagline here</h1>
+                        <h1 className='heading' style={CallToActionStyle.tag}>Handcrafted items made beautifully</h1>
                     
                         <a href='/shop/all' className='buttonLeft' style={CallToActionStyle.buttonLeft}>View Products</a>
                         <a href='/contact-us' className='buttonRight' style={CallToActionStyle.buttonRight}>Custom quote</a>

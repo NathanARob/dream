@@ -5,8 +5,8 @@ const Footer = () => {
         
     return (
         <div id='footer'>
-        
-            
+            <div class='footerInner'></div>
+                
         </div>
     );
 

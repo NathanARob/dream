@@ -18,6 +18,11 @@ library.add(fab, faEnvelope, faArrowCircleLeft, faShoppingCart)
 
 
 class App extends Component {
+  componentWillMount() {
+    document.title = 'Dream Capture'
+  }
+
+
   render() {
     return (
       <div className="App">
